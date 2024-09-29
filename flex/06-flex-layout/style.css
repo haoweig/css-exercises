@@ -7,7 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 img {
@@ -19,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -29,32 +30,32 @@ input {
 }
 
 .content {
+  flex:1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 
-.header {
+.header, .footer {
   display: flex;
   justify-content:space-between;
   padding: 0px 10px;
 }
 
-.left-links, .right-links{
+ul{
   display: flex;
   list-style-type: none; /* Removes bullet */
-  gap: 10px;
+  gap: 16px;
   padding-left: 0px;
 }
 
 .footer {
-  display: flex;
-  justify-content:space-between;
   background-color: #eeeeee;
-  padding: 0px 10px;
 }
 
 a {
   text-decoration: none; /* Removes underline from the link */
+  color: #666;
 }
